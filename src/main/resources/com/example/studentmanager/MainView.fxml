@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.studentmanager.MainController">
+    <children>
+        <TableView fx:id="studentTable" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="380.0">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="nameColumn" text="Name" />
+                <TableColumn fx:id="emailColumn" text="Email" />
+                <TableColumn fx:id="majorColumn" text="Major" />
+            </columns>
+        </TableView>
+        <Label layoutX="10.0" layoutY="220.0" text="ID:" />
+        <TextField fx:id="idField" layoutX="80.0" layoutY="220.0" />
+        <Label layoutX="10.0" layoutY="250.0" text="Name:" />
+        <TextField fx:id="nameField" layoutX="80.0" layoutY="250.0" />
+        <Label layoutX="10.0" layoutY="280.0" text="Email:" />
+        <TextField fx:id="emailField" layoutX="80.0" layoutY="280.0" />
+        <Label layoutX="10.0" layoutY="310.0" text="Major:" />
+        <TextField fx:id="majorField" layoutX="80.0" layoutY="310.0" />
+        <Button fx:id="addButton" layoutX="10.0" layoutY="340.0" mnemonicParsing="false" text="Add" />
+        <Button fx:id="updateButton" layoutX="80.0" layoutY="340.0" mnemonicParsing="false" text="Update" />
+        <Button fx:id="deleteButton" layoutX="150.0" layoutY="340.0" mnemonicParsing="false" text="Delete" />
+    </children>
+</AnchorPane>
